@@ -1,8 +1,8 @@
 # Resource-Efficient Multiview Perception
 
-This is the repository that contains source code for the [Resource-Efficient Multiview Perception website](https://kostadakic.github.io/).
+This is the repository that contains source code for the [Resource-Efficient Multiview Perception website](https://kostadakic.github.io/mvmae.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find our work useful for your work please cite:
 ```
 @inproceedings{dakic2025MAE,
       title = {Resource-Efficient Multiview Perception: Integrating Semantic Masking with Masked Autoencoders}, 
