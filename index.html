@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="Communication-efficient distributed multiview detection and tracking using masked autoencoders (MAEs).">
+    <meta name="keywords" content="Multiview, Semantic Masking, Masked Autoencoders, Communication-Efficient, Distributed Vision">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resource-Efficient Multiview Perception: Integrating Semantic Masking with Masked Autoencoders</title>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+    <link rel="icon" href="./static/images/icon.svg">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Resource-Efficient Multiview Perception: Integrating Semantic Masking with Masked Autoencoders</h1>
+                    <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com.au/citations?user=5r1SVzQAAAAJ&hl=en">Kosta Dakic</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.au/citations?user=V-YM7ecAAAAJ&hl=en">Kanchana Thilakarathna</a><sup>1</sup>,
+                <span class="author-block">
+              <a href="https://scholar.google.com.au/citations?user=Fj8MuyEAAAAJ&hl=en">Rodrigo N. Calheiros</a><sup>2</sup>,</span>
+                <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=dDQR5tIAAAAJ&hl=en">Teng Joon Lim</a><sup>1</sup>,</span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>The University of Sydney,</span>
+                        <span class="author-block"><sup>2</sup>Western Sydney University</span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF Link. -->
+                            <span class="link-block">
+                <a href="https://arxiv.org/pdf/2410.04817"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+                            <span class="link-block">
+                <a href="https://arxiv.org/abs/2410.04817"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <img src="static/images/Fig1.png" alt="fig1">
+            <h2 class="subtitle has-text-centered">
+                <span class="dnerf">
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Multiview systems have become a key technology in modern computer vision, offering advanced capabilities in scene understanding and analysis. 
+                        However, these systems face critical challenges in bandwidth limitations and computational constraints, particularly for resource-limited camera nodes. 
+                        This paper presents a novel approach for communication-efficient distributed multiview detection and tracking using masked autoencoders (MAEs). 
+                        We introduce a semantic-guided masking strategy that leverages pre-trained segmentation models and a tunable power function to prioritize informative image regions. 
+                        This approach, combined with an MAE, reduces communication overhead while preserving essential visual information. 
+                        
+                        We evaluate our method on both virtual and real-world multiview datasets, demonstrating comparable performance in terms of detection and tracking performance metrics compared to state-of-the-art techniques, even at high masking ratios. 
+                        Our selective masking algorithm outperforms random masking, maintaining higher accuracy and precision as the masking ratio increases. 
+                        Furthermore, our approach achieves a significant reduction in transmission data volume compared to baseline methods, thereby balancing multiview tracking performance with communication efficiency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <!-- Diffusion. -->
+        <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Diffusion process</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              System model of the proposed distributed multiview pedestrian detection and tracking framework. 
+                    Multiple cameras capture images, which are resized and undergo semantic-guided masking before wireless transmission. 
+                    The received masked images are processed by an MAE with an encoder-decoder architecture. 
+                    The reconstructed images are then fed into a combined detection and tracking module, producing both detection and tracking outputs for the observed targets.
+            </p>
+          </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column is-3 has-text-centered" style="padding-right: 0">
+              <img src="./static/images/diffprocess/init.png" class="interpolation-image"
+                   alt="Initial status.">
+              <p>Start Status</p>
+            </div>
+            <span style="
+                        font-weight: bold;
+                        font-size: larger;
+                    ">→</span>
+            <div class="column interpolation-video-column" style="padding: .75rem 1.5rem">
+              <div id="interpolation-image-wrapper"><img src="./static/images/diffprocess/new_0.png"></div>
+              <input class="slider is-fullwidth is-large is-info" id="interpolation-slider" step="1" min="0"
+                     max="239" value="0" type="range">
+            </div>
+            <span style="
+                        font-weight: bold;
+                        font-size: larger;
+                    ">→</span>
+            <div class="column is-3 has-text-centered" style="padding-left: 0">
+              <img src="./static/images/diffprocess/final.png" class="interpolation-image"
+                   alt="Final status.">
+              <p class="is-bold">End Status</p>
+            </div>
+          </div>
+          <br>
+
+        </div>
+      </div>
+
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@inproceedings{dakic2025MAE,
+      title = {Resource-Efficient Multiview Perception: Integrating Semantic Masking with Masked Autoencoders}, 
+      author = {Kosta Dakic and Kanchana Thilakarathna and Rodrigo N. Calheiros and Teng Joon Lim},
+      year = {2025},
+      booktitle ={2025 IEEE International Conference on Pervasive Computing and Communications (PerCom)}
+}
+}</code></pre>
+    </div>
+</section>
+
+
+<footer class="footer">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is licensed under a <a rel="license"
+                                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                    <p>
+                        This means you are free to borrow the <a
+                            href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+                        we just ask that you link back to this page in the footer.
+                        Please remember to remove the analytics code included in the header of the website which
+                        you do not want on your website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
