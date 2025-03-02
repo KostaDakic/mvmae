@@ -1,8 +1,8 @@
 # Resource-Efficient Multiview Perception
 
-This is the repository that contains source code for the [Resource-Efficient Multiview Perception website](https://kostadakic.github.io/mvmae.github.io).
+This is the repository that contains source code for the [Resource-Efficient Multiview Perception website](https://kostadakic.github.io/mvmae/).
 
-If you find our work useful for your work please cite:
+If you find our work useful please cite:
 ```
 @inproceedings{dakic2025MAE,
       title = {Resource-Efficient Multiview Perception: Integrating Semantic Masking with Masked Autoencoders}, 
