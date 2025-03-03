@@ -131,9 +131,22 @@
                  alt="Kappa abalation study."/>
             <p class="is-bold">Figure 1: Kappa abalation study figure.</p>
 			
+			This figure presents an ablation study conducted to determine the optimal value for our power function parameter κ in the semantic-guided masking algorithm. 
+			We evaluated five different κ values (0.00, 0.05, 0.10, 0.15, and 0.20) against the Multiple Object Detection Accuracy (MODA) metric on the Wildtrack dataset across various masking ratios. 
+			The results demonstrate that κ=0.15 provides the best balance between random and deterministic masking behaviors, maintaining high detection accuracy even as the masking ratio increases. 
+			At κ=0.00, which approximates random masking, we observe a rapid decline in performance as the masking ratio increases. In contrast, κ=0.15 maintains robust performance until approximately 0.80 masking ratio, after which performance decreases more rapidly. 
+			This validates our choice of κ=0.15 for the main experiments, as it effectively prioritizes informative image regions while preserving sufficient global context for accurate multiview detection.
+			
 			<img src="./static/images/commCost.png"
                  alt="Communication cost."/>
             <p class="is-bold">Figure 2: Communication cost vs. masking ratio.</p>
+			
+			This figure illustrates the significant communication efficiency gained through our proposed MAE-based approach compared to traditional multiview methods. 
+			The graph plots communication volume (in megabits) against masking ratio, clearly demonstrating the inverse relationship between masking ratio and data transmission requirements. 
+			The baseline approach (original method) shown by the dashed red line maintains a constant high communication cost of approximately 154.83 megabits regardless of masking configuration. 
+			In contrast, our proposed method (blue line) shows a linear decrease in communication volume as the masking ratio increases, approaching near-zero transmission costs at masking ratios close to 1.0. 
+			At our recommended operating point (70% masking ratio), the communication volume is reduced to approximately 11.7 megabits, representing a 13.33-fold reduction compared to conventional approaches. 
+			This dramatic decrease in communication requirements demonstrates the practical applicability of our method in bandwidth-constrained environments while maintaining competitive detection and tracking performance.
           </div>
         </div>
       </div>
